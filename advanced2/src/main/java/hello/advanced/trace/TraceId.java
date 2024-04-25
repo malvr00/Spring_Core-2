@@ -26,7 +26,7 @@ public class TraceId {
         return new TraceId(id, level + 1);
     }
 
-    private TraceId createPreviousId() {
+    public TraceId createPreviousId() {
         // ID는 같지만 이전 Level로 이동
         return new TraceId(id, level - 1);
     }
