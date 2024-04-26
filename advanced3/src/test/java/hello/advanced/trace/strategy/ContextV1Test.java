@@ -84,10 +84,10 @@ public class ContextV1Test {
             }
         });
         contextV1.execute();
-
+        
         ContextV1 contextV2 = new ContextV1(() -> log.info("비즈니스 로직2 실행"));
         contextV2.execute();
 
     }
-    
+
 }
